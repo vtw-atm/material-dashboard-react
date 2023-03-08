@@ -27,30 +27,30 @@ import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
 
 export default function data() {
-  const Author = ({ image, name, email }) => (
-    <MDBox display="flex" alignItems="center" lineHeight={1}>
-      <MDAvatar src={image} name={name} size="sm" />
-      <MDBox ml={2} lineHeight={1}>
-        <MDTypography display="block" variant="button" fontWeight="medium">
-          {name}
-        </MDTypography>
-        <MDTypography variant="caption">{email}</MDTypography>
-      </MDBox>
-    </MDBox>
-  );
-
-  const Job = ({ title, description }) => (
-    <MDBox lineHeight={1} textAlign="left">
-      <MDTypography display="block" variant="caption" color="text" fontWeight="medium">
-        {title}
-      </MDTypography>
-      <MDTypography variant="caption">{description}</MDTypography>
-    </MDBox>
-  );
+  // const Author = ({ image, name, email }) => (
+  //   <MDBox display="flex" alignItems="center" lineHeight={1}>
+  //     <MDAvatar src={image} name={name} size="sm" />
+  //     <MDBox ml={2} lineHeight={1}>
+  //       <MDTypography display="block" variant="button" fontWeight="medium">
+  //         {name}
+  //       </MDTypography>
+  //       <MDTypography variant="caption">{email}</MDTypography>
+  //     </MDBox>
+  //   </MDBox>
+  // );
+  //
+  // const Job = ({ title, description }) => (
+  //   <MDBox lineHeight={1} textAlign="left">
+  //     <MDTypography display="block" variant="caption" color="text" fontWeight="medium">
+  //       {title}
+  //     </MDTypography>
+  //     <MDTypography variant="caption">{description}</MDTypography>
+  //   </MDBox>
+  // );
 
   return {
     columns: [
-      { Header: "author", accessor: "author", width: "45%", align: "left" },
+      { Header: "author", accessor: "author", align: "left" },
       { Header: "function", accessor: "function", align: "left" },
       { Header: "status", accessor: "status", align: "center" },
       { Header: "employed", accessor: "employed", align: "center" },
